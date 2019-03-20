@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active:
+      -dev
+---
+server:
+  port: 7001
+spring:
+  profiles: dev  
+  application: 
+    name: apmcloud-backend-config-dev
+
+foo: foo version 21
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://apm-domain:7001/eureka/
