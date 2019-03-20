@@ -1,26 +1,26 @@
-spring:
-  profiles:
-    active:
+spring: 
+  profiles: 
+    active: 
       -dev
 ---
-server:
+server: 
   port: 8001
-spring:
+spring: 
   profiles: dev  
-  application: 
+  application:  
     name: apmcloud-backend-config-dev
-eureka:
-  instance:
+eureka: 
+  instance: 
     hostname: apm-domain
     instance-id: apm-cloud-sysadmin8001
     prefer-ip-address: true
-  client:
+  client: 
     register-with-eureka: true
     fetch-registry: true
-    service-url:
+    service-url: 
       defaultZone: http://apm-domain:7001/eureka/
-mybatis:
+mybatis: 
   config-location: classpath:mybatis/mybatis.cfg.xml
   type-aliases-package: org.apm.cloud.entities
-  mapper-locations:
+  mapper-locations: 
     - classpath:mybatis/mapper/**/*.xml
