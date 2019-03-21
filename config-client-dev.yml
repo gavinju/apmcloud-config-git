@@ -8,7 +8,7 @@ spring:
   application: 
     name: apmcloud-backend-config-dev
 
-foo: foo version 24
+foo: foo version 25
 
 eureka:
   client:
